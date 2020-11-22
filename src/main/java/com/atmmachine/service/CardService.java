@@ -7,6 +7,7 @@ import com.atmmachine.exceptions.CardNotFoundException;
 import com.atmmachine.model.Card;
 import com.atmmachine.model.request.ChangePinRequest;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -21,6 +22,7 @@ import java.sql.SQLException;
 public class CardService {
 
     @Getter
+    @Setter
     private Integer cardId;
 
     BankDao bankDao;
